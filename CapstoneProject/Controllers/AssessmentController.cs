@@ -11,7 +11,7 @@ namespace CapstoneProject.Controllers
         [HttpGet]
         public IActionResult Assessment()
         {
-            return View();
+            return View(nameof(Assessment));
         }
     }
 }

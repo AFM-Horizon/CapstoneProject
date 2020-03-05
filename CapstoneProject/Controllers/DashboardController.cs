@@ -13,7 +13,7 @@ namespace CapstoneProject.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            return View();
+            return View(nameof(Index));
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -11,13 +11,13 @@ namespace CapstoneProject.Controllers
         [HttpGet]
         public IActionResult UnitList()
         {
-            return View();
+            return View(nameof(UnitList));
         }
 
         [HttpGet]
         public IActionResult UnitDetails()
         {
-            return View();
+            return View(nameof(UnitDetails));
         }
     }
 }
