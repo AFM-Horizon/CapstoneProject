@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using CapstoneProject.DataAccess;
+using CapstoneProject.DataAccess.Subject;
+using CapstoneProject.DataAccess.UnitOfWork;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -31,6 +34,9 @@ namespace CapstoneProject
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            //Injected Custom Services
+            services.AddTransient<ISubjectRepository, SubjectRepository>();
+            services.AddTransient<IUnitOfWork, UnitOfWork>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }

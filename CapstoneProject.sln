@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CapstoneProject", "CapstoneProject\CapstoneProject.csproj", "{BCBC846C-3C3C-4415-947C-3E117C9C5BA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControllerUnitTests", "ControllerUnitTests\ControllerUnitTests.csproj", "{46A22AFE-1950-4C85-BF9F-0B892C0C3482}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControllerUnitTests", "ControllerUnitTests\ControllerUnitTests.csproj", "{46A22AFE-1950-4C85-BF9F-0B892C0C3482}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
