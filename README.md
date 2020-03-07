@@ -26,7 +26,37 @@ public class SubjectRepository : ISubjectRepository
         }
 ```
 
-Qiao has provided us with the ScopeDataFeed.json mockup data and I have created a json deserializer so that we can access this through the Repository and UnitOfWork.  You can see an example of how to call and use it in the Subject Controller.  
+Qiao has provided us with the ScopeDataFeed.json mockup data and I have created a json deserializer so that we can access this through the Repository and UnitOfWork.
+
+```C Sharp
+ //Returns a single TGA subject object based on the module code
+        private Subject GetSingleScopeSubjectByModuleCode(string id)
+        {
+            Subject subjectToReturn = null;
+
+            foreach (var subjectTransferObject in GetScopeDataFeedJsonData())
+            {
+                if (subjectTransferObject.ModuleCode == id)
+                {
+                    subjectToReturn = subjectTransferObject;
+                }
+            }
+
+            return subjectToReturn;
+        }
+
+        //Returns a list of all TGA subject objects from the Mock Scope Data Feed
+        private IEnumerable<Subject> GetScopeDataFeedJsonData()
+        {
+            string contentPath = _environment.WebRootPath;
+
+            var json = File.ReadAllText(contentPath + "/ScopeDataFeed.json");
+            var subjectList = JsonConvert.DeserializeObject<IEnumerable<Subject>>(json);
+            return subjectList;
+        }
+```
+
+You can see an example of how to call and use it in the Subject Controller below.  
 
 ```C Sharp
 private readonly IUnitOfWork _unit;
