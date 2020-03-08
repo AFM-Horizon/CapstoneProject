@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ControllerUnitTests", "Cont
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StateMachineCapstone", "StateMachineCapstone\StateMachineCapstone.csproj", "{80BD3431-4658-4EB1-AE36-15AFEAA0EBCC}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SubjectStateTests", "SubjectStateTests\SubjectStateTests.csproj", "{A12C97AC-4414-4A01-8A4B-AE054381D6B0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{80BD3431-4658-4EB1-AE36-15AFEAA0EBCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80BD3431-4658-4EB1-AE36-15AFEAA0EBCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80BD3431-4658-4EB1-AE36-15AFEAA0EBCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A12C97AC-4414-4A01-8A4B-AE054381D6B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A12C97AC-4414-4A01-8A4B-AE054381D6B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A12C97AC-4414-4A01-8A4B-AE054381D6B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A12C97AC-4414-4A01-8A4B-AE054381D6B0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
