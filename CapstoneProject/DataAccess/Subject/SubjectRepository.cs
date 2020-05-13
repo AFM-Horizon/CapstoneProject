@@ -9,6 +9,11 @@ using Newtonsoft.Json;
 
 namespace CapstoneProject.DataAccess.Subject
 {
+    /// <summary>
+    ///This is the concrete implementation of the ISubjectRepository,
+    ///This layer will be changed out when the data access changes to a different method
+    ///Think of it as a modular component in the system that can be "plugged in"
+    /// </summary>
     public class SubjectRepository : ISubjectRepository
     {
         private readonly IHostingEnvironment _environment;
