@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using CapstoneProject.DataAccess;
 using CapstoneProject.DataAccess.Subject;
 using CapstoneProject.DataAccess.UnitOfWork;
+using CapstoneProject.Service_Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -34,8 +35,8 @@ namespace CapstoneProject
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            //Injected Custom Services
-            services.AddTransient<ISubjectRepository, SubjectRepository>();
+            //Our Services - This includes our call to our "AddRepositories" Extension method.  
+            services.AddRepositories(Configuration);
             services.AddTransient<IUnitOfWork, UnitOfWork>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
