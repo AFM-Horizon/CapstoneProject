@@ -6,6 +6,9 @@ namespace CapstoneProject.Service_Extensions
 {
     public static class RepositoryServiceRegistration
     {
+        //Extension Methods
+        //https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/extension-methods
+
         /// <summary>
         /// This is an Extension method on the <see cref="IServiceCollection"/> class.
         /// It allows us to encapsulate the logic which checks which subject repository we require to be registered
